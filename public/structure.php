@@ -1,4 +1,8 @@
 <?php
+//
+
+
+
 $resume = [
     'first_name' => 'John', //String
     'last_name'=> 'Doe', //String
@@ -13,11 +17,11 @@ $resume = [
     'address' => [ //Array
         'country'=> "Australia", //String
         'city'=>'Sydney', //String
-        'coordx'=>'-33.807765', //float
-        'coordy'=>'151.082128' //float
+        'latitude'=>'-33.873461', //float
+        'longitude'=>'151.216663' //float
     ],
     'skills' => [ //Array
-        ['name'=>'Project&Management','efficiency'=>5], //Array (String,int)
+        ['name'=>'Project&Management','efficiency'=>95], //Array (String,int)
         ['name'=>'Working Under Pressure', 'efficiency'=>90],
         ['name'=>'Teamwork', 'efficiency'=>90],
         ['name'=>'Time Management', 'efficiency'=>100],
@@ -35,8 +39,9 @@ $resume = [
             'address' => [  //Array
                 'country'=> 'Australia',  //String
                 'city'=>'Sydney',  //String
-                'coordx' =>'-33.807765', //float
-                'coordy'=>'151.082128' //float
+                'latitude'=>'-33.886782',
+                'longitude'=>'151.201187',
+
             ],
             'startwork'=>'2013-06-01 00:00',  //String
             'endwork'=>'2016-12-01 00:00',  //String
@@ -60,8 +65,8 @@ $resume = [
             'address' =>  [
                 'country'=> 'Australia',
                 'city'=>'Sydney',
-                'coordx'=>'-33.807765',
-                'coordy'=>'151.082128'
+                'latitude'=>'-33.899619',
+                'longitude'=>'151.217455',
             ],
 
             'startwork'=>'2009-06-01 00:00',
@@ -86,8 +91,8 @@ $resume = [
             'address' =>  [
                 'country'=> 'Australia',
                 'city'=>'Brisbane',
-                'coordx'=>' -27.469888',
-                'coordy'=>' 153.003761',
+                'latitude'=>'-33.278951',
+                'longitude'=>'151.071911',
             ],
             'startwork'=>'2007-08-01 00:00',
             'endwork'=>'2009-01-01 00:00',
@@ -110,8 +115,8 @@ $resume = [
             'name'=>'Foundation Leadership Program Certificate',  //String
             'trainingcentre'=>'CSE EMTW Education Institute',  //String
             'country'=>null,  //String
-            'datastart'=>'2016-01-01 00:00',  //String
-            'dataend'=>null,  //String
+            'datastart'=>null,  //String
+            'dataend'=>'2016-01-01 00:00',  //String
         ],
         [
             'name'=>'European Bartender School',
@@ -128,11 +133,13 @@ $resume = [
             'dataend'=>'2015-09-01 00:00',
         ],
     ],
+    // Исправлена невозможность добавить несколько видов образований
     'education'=> [
-        'speciality'=>'Service management',  //String
-        'nameuniver'=>'Brisbane Univercity',  //String
-        'datastart'=>'2005-08-01 00:00',  //String
-        'dataend'=>'2008-06-01 00:00',  //String
+        ['speciality'=>'Service management',  //String
+         'nameuniver'=>'Brisbane Univercity',  //String
+         'datastart'=>'2005-08-01 00:00',  //String
+         'dataend'=>'2008-06-01 00:00',  //String
+        ]
     ],
     'languages' =>    [
         ['name' =>'English', 'level'=>'Native'],  //String,String
