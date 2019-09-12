@@ -91,8 +91,8 @@ $resume = [
             'address' =>  [
                 'country'=> 'Australia',
                 'city'=>'Brisbane',
-                'latitude'=>'-33.278951',
-                'longitude'=>'151.071911',
+                'latitude'=>'-27.463558',
+                'longitude'=>'153.022584',
             ],
             'startwork'=>'2007-08-01 00:00',
             'endwork'=>'2009-01-01 00:00',

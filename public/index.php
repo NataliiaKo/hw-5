@@ -76,7 +76,7 @@ function printdiff($start, $end){
             <?php foreach($resume['experiences'] as $experience) {?>
             <br><hr>
             <h3><?= $experience['position'] ?></h3>
-            <h2><?= $experience['place'] ?></h2>
+                <h2><a href="https://maps.google.com/?q=<?= $experience['address']['latitude']?>,<?= $experience['address']['longitude']?>"><?= $experience['place'] ?></a></h2>
              <button type="button" class="btn btn-light" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="
 <?php
 // Вывод сообщения разницы двух дат
